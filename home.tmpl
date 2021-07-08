@@ -13,10 +13,11 @@ vi: ft=html
 
 <style>
 body {
-  background: url("./theme/NC.jpg");
-  font-family: 'Overpass', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
+ <div style="background-image: url('./theme/NC.jpg')";>
+   font-family: 'Overpass', sans-serif;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ </div>
 }
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -25,15 +26,15 @@ h1, h2, h3, h4 {
 
 </head>
 <body>
-
-  <div class="container">
-    <div class="jumbotron">
-      <div style="background-image: url('./theme/NC.jpg')";>
+  <div style="background-image: url('./theme/NC.jpg')";>
+    <div class="container">
+      <div class="jumbotron">
         <h1 class="display-4">Kubernetes OIDC Auth</h1>
         <p class="lead">This utility will help you authenticate with your Kubernetes cluster with an OpenID Connect (OIDC) flow. Sign in to get started.</p>
         <a class="btn btn-warning btn-lg" href="/login" role="button">Sign in</a>
       </div>
     </div>
+  </div>
     <p>Kubernetes by <a href="https://kinvolk.io">Kinvolk</a>. Built with <a href="https://github.com/heptiolabs/gangway">gangway</a>, Apache-2.0</p>
   </div>
 
